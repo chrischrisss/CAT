@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="images/578F677A-DF4A-43A8-B513-86BB4E2D9543_4_5005_c-removebg-preview.png" type="">
+    <title>CAT</title>
+</head>
+<body>
+    
+<!-- <div id="loader">
+    <div id="progress"></div>
+</div>
+
+<div id="preloader">
+    <div id="preloader-text">
+        hello
+    </div>
+</div> -->
+
+<div class="main-content">
+    <a href="info.html">click me!</a>
+</div>
+
+
+
+<div class="wrapper">
+    <image id= "cat" src="media/cat-stoned.gif" alt=" cat illustration" style="height: 200px;">
+    <h2 class="question">Will you be my Valentine?</h2>
+    <div class="btn-group">
+        <img src="images/6196c23ff36d6f3a8d233603bd6a5da6.png" alt="Cat Paw" class="cat-paw">
+        <button class="yes-btn" id="yes_btn">Yes</button>
+        <button class="no-btn" id="no_btn">No</button>
+        <canvas id="confetti"></canvas>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+
+<script>
+    const buttonContainer = document.querySelector('.no-btn');
+    const paw = document.querySelector('.cat-paw');
+
+    window.addEventListener('mousemove', (e) => {
+      const rect = buttonContainer.getBoundingClientRect();
+      const distance = Math.hypot(
+        e.clientX - (rect.left + rect.width / 2),
+        e.clientY - (rect.top + rect.height / 2)
+      );
+      if (distance < 120) {  // Adjust this value to change sensitivity
+        paw.style.bottom = '0px';
+        buttonContainer.classList.add('covered');
+      } else {
+        paw.style.bottom = '-800px';
+        buttonContainer.classList.remove('covered');
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
+  
+
+
+

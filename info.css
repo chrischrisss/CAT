@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+	scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    color: #000;
+	line-height: 1.6;
+    font-family: neue-haas-unica, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    padding: 0;
+    margin: 0;
+	height: 100%;
+}
+
+#crunchies1 {
+    background-color: rgba(0, 0, 0, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    max-width: 100%;
+    height: auto;
+}
+
+#about {
+    width: 100%;
+    margin: 0 auto;
+   /* z-index: 1;*/
+}
+
+.cat-1 {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 100%;
+    max-width: 223px;
+    margin: 0px 0px -21px 0px;
+    padding: 0;
+}
+
+.post {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 3rem 3rem;
+    text-align: left;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+ }
+
+.title {
+    font-family: neue-haas-unica, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #000;
+    font-size: 3rem;
+    line-height: 1.0;
+    margin: 0;
+    padding: 0em 0em 0em 0em;
+}
+
+.copycopy {
+    font-size: 18px;
+    font-family: neue-haas-unica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+.copycopy::before {
+    content: '__';
+    line-height: 1;
+    color: #000000;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0 0 1rem;
+    letter-spacing: -0.05em;
+    display: block;
+    padding: 0;
+}
+
+.spacer-mid {
+    margin: 50px 0px 50px 0px;
+}
+
+.video { 
+    padding: 30px 0px 50px 0px;
+}
+
+img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 auto;
+    border: none;
+    border: 0;
+    outline: none;
+}
+
+#whycats {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0rem 0rem 4rem;
+}
+
+.copycopy1 {
+    font-size: 18px;
+    font-family: neue-haas-unica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}

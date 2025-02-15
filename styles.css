@@ -1,0 +1,210 @@
+@import url(https://fonts.googleapis.com/css?family=Heebo:900|Inconsolata);
+
+* {
+    font-family:'Nunito';
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* cursor: url(./images/578F677A-DF4A-43A8-B513-86BB4E2D9543_4_5005_c-removebg-preview.png), default; */
+    
+}
+
+
+
+#preloader {
+    background: url(/images/catgif.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    background-size: 150px;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f4c5c5;
+    position: fixed;
+    z-index: 999;
+}
+
+#preloader-text {
+    display: flex;
+    margin-top: 26em;
+}
+
+#loader {
+    width: 300px;
+    height: 20px;
+    background-color: #f3f3f3;
+    border-radius: 50px; /* Large value creates a pill shape */
+    overflow: hidden;
+    position: absolute;
+    top: 24em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
+
+/* Progress bar */
+#progress {
+    width: 0%; /* Initial width of the progress */
+    height: 100%; /* Full height of the loader */
+    background-color: #b66878; /* Color of the progress bar */
+    transition: width 0.3s ease; /* Smooth width transition */
+}
+
+/* cat paw */
+
+
+  /* .button-container {
+    position: relative;
+    display: inline-block;
+  } */
+  .cat-paw {
+    position: absolute;
+    bottom: -800px;
+    left: 320px;
+    transform: translateY(75%);
+    max-width: 250px;
+    transition: bottom 0.15s ease-in-out;
+    pointer-events: none;
+    z-index: 2;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    
+  }
+  .covered .no-btn{
+    pointer-events: none;
+    /* opacity: 0.5; */
+    cursor: not-allowed;
+  }
+  /* button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+  } */
+
+
+/* .all-buttons {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    width: 50%;
+    background-color: pink;
+}
+
+.yes-button{
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+} */
+
+/* /// */
+.wrapper {
+    position: relative;
+    width:600px ;
+    height:400px ;
+    background: #ffb3c6;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.9;
+
+}
+
+.btn-group {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+}
+
+#yes_btn {
+    position: absolute;
+    width: 100px;
+    height: inherit;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 2px solid;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+#no_btn {
+    position: absolute;
+    width: 100px;
+    height: inherit;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 2px solid;
+    outline: none;
+    margin-left: 300px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    user-select: none;
+}
+
+
+    
+button:nth-child(2) {
+    margin-right: 300px;
+    background: white;
+
+}
+
+.main-content {
+    display: flex;
+    justify-items: center;
+    position: absolute;
+    bottom: 95%;
+}
+
+/* CAT FALLING */
+.falling-image {
+    position: absolute;
+    top: -100px;
+    transition: top 1s linear;
+    width: 100px;
+    height: 100px;
+    z-index: 999;
+}
+
+.bouncing-cat {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    z-index: 999;
+    cursor: grab;
+    pointer-events: all;
+    user-select: none;
+    transition: transform 0.1s;
+}
+
+.bouncing-cat:active {
+    cursor: grabbing;
+}
+
+
