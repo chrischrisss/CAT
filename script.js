@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function createTossableImage() {
         const img = document.createElement('img');
-        img.src = 'images/IMG_1200-removebg-preview.png';
+        img.src = '/images/IMG_1200-removebg-preview.png';
         img.className = 'bouncing-cat';
 
         img.style.left = Math.random() * (window.innerWidth - 100) + 'px';
